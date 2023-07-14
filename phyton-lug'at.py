@@ -14,6 +14,13 @@ print(eng_uz['watermelon'])
 #3.
 talaba={"ism":"Karimjon","yosh":20,"yil":2003}
 #print(f"Talabani ismi {talaba['ism']} yoshi {talaba['yosh']} da {talaba['yil']}da tug'ilgan")
+#yangi kalit va qiymat qo'shish -->
 talaba["kurs"]=3
 talaba["fakultet"]="Amaliy matematika"
+print(talaba)
+#kalitni qiymatini o'zgartirish -->
+talaba["ism"]='Mirzabek'
+print(talaba)
+#elementni o'chirish
+del talaba['fakultet']
 print(talaba)
