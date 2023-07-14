@@ -18,9 +18,18 @@ talaba={"ism":"Karimjon","yosh":20,"yil":2003}
 talaba["kurs"]=3
 talaba["fakultet"]="Amaliy matematika"
 print(talaba)
+
 #kalitni qiymatini o'zgartirish -->
 talaba["ism"]='Mirzabek'
 print(talaba)
-#elementni o'chirish
+
+#elementni o'chirish-->del elementlarni o'chirish vazifasini bajaradi
 del talaba['fakultet']
 print(talaba)
+
+#Amaliyot
+
+#1.
+otam={"ismi":'Nizomjon',"yoshi":49}
+print(f"Otamning ismi {otam['ismi']} yoshi {otam['yoshi']} da")
+#print(f"onam {onam['ismi]} yoshi{onam['yoshi']}da")
