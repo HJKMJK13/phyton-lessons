@@ -33,3 +33,10 @@ print(talaba)
 otam={"ismi":'Nizomjon',"yoshi":49}
 print(f"Otamning ismi {otam['ismi']} yoshi {otam['yoshi']} da")
 #print(f"onam {onam['ismi]} yoshi{onam['yoshi']}da")
+
+#2.
+oila={"ota":"osh","ona":"somsa","opam":"shashlik","ozim":"manti"}
+print(f"Oilamizda otam {oila['ota']}ni yaxshi ko'radi \
+onam {oila['ona']}ni yaxshi ko'radi \
+opam {oila['opam']}ni yaxshi koradi \
+ozim {oila['ozim']}ni yaxshi ko'raman")
