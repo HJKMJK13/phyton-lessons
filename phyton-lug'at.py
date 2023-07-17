@@ -27,16 +27,51 @@ print(talaba)
 del talaba['fakultet']
 print(talaba)
 
+#get funksiyasi lug'atga kiritilgan kalit so'zlarni  ko'rib chiqadi  agar bo'lsa qiymatini qaytaradi bo'lmasa funksiyadagi javob qaytaradi 
+
 #Amaliyot
 
-#1.
-otam={"ismi":'Nizomjon',"yoshi":49}
-print(f"Otamning ismi {otam['ismi']} yoshi {otam['yoshi']} da")
+# =============================================================================
+# #1.
+# otam={"ismi":'Nizomjon',"yoshi":49}
+# print(f"Otamning ismi {otam['ismi']} yoshi {otam['yoshi']} da")
+# =============================================================================
 #print(f"onam {onam['ismi]} yoshi{onam['yoshi']}da")
 
-#2.
-oila={"ota":"osh","ona":"somsa","opam":"shashlik","ozim":"manti"}
-print(f"Oilamizda otam {oila['ota']}ni yaxshi ko'radi \
-onam {oila['ona']}ni yaxshi ko'radi \
-opam {oila['opam']}ni yaxshi koradi \
-ozim {oila['ozim']}ni yaxshi ko'raman")
+# =============================================================================
+# #2.
+# oila={"ota":"osh","ona":"somsa","opam":"shashlik","ozim":"manti"}
+# print(f"Oilamizda otam {oila['ota']}ni yaxshi ko'radi \
+# onam {oila['ona']}ni yaxshi ko'radi \
+# opam {oila['opam']}ni yaxshi koradi \
+# ozim {oila['ozim']}ni yaxshi ko'raman")
+# =============================================================================
+
+# =============================================================================
+# #3.
+# lugat={"integer":"butun son","float":"o'nlik son","and":"va","or":"yoki"}
+# soz=input("so'zni kiriting:")
+# print(lugat.get(soz,'bunday soz mavjud emas'))
+# =============================================================================
+
+# =============================================================================
+# mashina={"tezlik":"bugatti","chiroy":"royce","chidamlilik":"brabus"}
+# tanlang=input("mashinani kirting:")
+# print(mashina.get(tanlang,"bilmayman"))
+# 
+# =============================================================================
+#Men haqimda
+# =============================================================================
+# men={"Ismim":"Karimjon","yoshim":20,"ovqat":"manti","rang":"yashil,ko'k"}
+# soroq=input("Bilmoqchi bolgan malutmotingizni kiriting:")
+# print(men.get(soroq,"Bu haqida malumot kiritilmagan"))
+# =============================================================================
+
+#4.
+lugat={"integer":"butun son","float":"o'nlik son","and":"va","or":"yoki"}
+soz=input('Kalit sozini kiriting:')
+tarjima=lugat.get(soz)
+if tarjima==None:
+    print("Bunday so'z mavjud emas")
+else:
+    print(f"{soz} so'zi {tarjima} deb tarjima qilinadi")
