@@ -75,3 +75,17 @@ if tarjima==None:
     print("Bunday so'z mavjud emas")
 else:
     print(f"{soz} so'zi {tarjima} deb tarjima qilinadi")
+    
+###############################################################################
+#2-qism -->Lug'atlar bilan ishlash
+
+#1.items metodi
+talaba={
+        'yosh':'Karimjon',
+        'familya':'Norboyev',
+        'kurs':3,
+        'yonalish':"Amaliy matematika"
+        }
+print(talaba.items())
+
+
