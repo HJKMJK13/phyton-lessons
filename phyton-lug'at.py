@@ -68,24 +68,39 @@ print(talaba)
 # =============================================================================
 
 #4.
+# =============================================================================
 lugat={"integer":"butun son","float":"o'nlik son","and":"va","or":"yoki"}
 soz=input('Kalit sozini kiriting:')
 tarjima=lugat.get(soz)
 if tarjima==None:
-    print("Bunday so'z mavjud emas")
+     print("Bunday so'z mavjud emas")
 else:
-    print(f"{soz} so'zi {tarjima} deb tarjima qilinadi")
+     print(f"{soz} so'zi {tarjima} deb tarjima qilinadi")
+# =============================================================================
     
 ###############################################################################
 #2-qism -->Lug'atlar bilan ishlash
 
 #1.items metodi
+# =============================================================================
 talaba={
-        'yosh':'Karimjon',
-        'familya':'Norboyev',
-        'kurs':3,
-        'yonalish':"Amaliy matematika"
-        }
-print(talaba.items())
+         'yosh':'Karimjon',
+         'familya':'Norboyev',
+         'kurs':3,
+         'yonalish':"Amaliy matematika"
+         }
+ #print(talaba.items())
+for kalit,qiymat in talaba.items():
+     print(f"Kalit:{kalit}")
+     print(f"Qiymat:{qiymat} \n")
+# =============================================================================
+telefonlar={
+    "Burjoq":"RED MI 10S",
+    "Quvonchbek":'RED MI 11',
+    "Karimjon":"OPPO RENO 7A",
+    "Shoxruzbek":"Iphone 7"
+    }
+for kalit,qiymat in telefonlar.items():
+    print(f"{kalit}ni telefoni: {qiymat}")
 
-
+#2.keys metodi
