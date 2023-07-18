@@ -104,3 +104,18 @@ for kalit,qiymat in telefonlar.items():
     print(f"{kalit}ni telefoni: {qiymat}")
 
 #2.keys metodi
+mahsulotlar={
+    'olma':20000,
+    'uzum':24000,
+    'banan':30000,
+    'nok':32000,
+    'shaftoli':25000
+    }
+#print(mahsulotlar.keys())
+print("Dokondagi mahsulotlar:")
+#1-usul
+for mahsulot in mahsulotlar.keys():
+    print(mahsulot.title())  
+#2-usul 
+for mahsulot in mahsulotlar:
+    print(mahsulot.title())
