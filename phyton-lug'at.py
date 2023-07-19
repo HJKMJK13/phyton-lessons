@@ -119,3 +119,45 @@ for mahsulot in mahsulotlar.keys():
 #2-usul 
 for mahsulot in mahsulotlar:
     print(mahsulot.title())
+# ikkala usuldan ham foydalansa boladi
+
+#3.
+bozorlik={'olma','uzum','non','baliq'}
+for mahsulot in mahsulotlar:
+    if mahsulot in bozorlik:
+        print(f"{mahsulot}ning narxi {mahsulotlar[mahsulot]}")
+for buyum in  bozorlik:
+    if buyum not in mahsulotlar:
+        print(f"Iltimos dokoninggizga {buyum} ham olib keling")
+
+#4.
+mashinalar={
+    'malibu':20000,
+    'nexia 3':10000,
+    'gentra':15000,
+    'matiz':6000,
+    'lacetti':17000
+    }
+kerak={'bmw','gentra','mers','lacetti'}
+for olaman in mashinalar:
+    if olaman in kerak:
+        print(f"{olaman}ning narxi {mashinalar[olaman]}")
+for yoq in kerak:
+    if yoq not in mashinalar:
+        print(f"Iltimos {yoq}ni ham olib keling")
+
+#5.
+telefonlar={
+    'samsung A21s':1800000,
+    'redmi 10s':2800000,
+    'oppo':2500000,
+    'iphone 11':4600000,
+    'iphone 14':10000000
+    }
+telefon_f={'redmi 11','iphone 14','oppo','realme'}
+for olamiz in telefonlar:
+    if olamiz in telefon_f:
+        print(f"{olamiz}ni narxi:{telefonlar[olamiz]}")
+for yoq_e in telefon_f:
+    if yoq_e not in telefonlar:
+        print(f"Iltimos{yoq_e}ni ham olib keling!")
