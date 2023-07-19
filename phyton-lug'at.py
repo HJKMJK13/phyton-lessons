@@ -160,4 +160,26 @@ for olamiz in telefonlar:
         print(f"{olamiz}ni narxi:{telefonlar[olamiz]}")
 for yoq_e in telefon_f:
     if yoq_e not in telefonlar:
-        print(f"Iltimos{yoq_e}ni ham olib keling!")
+        print(f"Iltimos {yoq_e}ni ham olib keling!")
+        
+# sorted funksiyasi --> Alifbo tartibida joylashtirib beradi
+#1.
+telefonlar={
+    'samsung A21s':1800000,
+    'redmi 10s':2800000,
+    'oppo':2500000,
+    'iphone 11':4600000,
+    'iphone 14':10000000
+    }
+for telefon in sorted(telefonlar):
+    print(telefon.title())
+#2.
+mashinalar={
+    'malibu':20000,
+    'nexia 3':10000,
+    'gentra':15000,
+    'matiz':6000,
+    'lacetti':17000
+    }
+for mashina in sorted(mashinalar):
+    print(mashina.title())
