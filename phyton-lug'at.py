@@ -221,5 +221,53 @@ for telefon in set(telefonlar.values()):
     
 # set aslida malumot turi unda takrorlangan elementlarni bitta qilib chiqarib beradi
 oyinchoqlar={'bear','ball','car','bear','lamp'}
-print(f"malumot turi {type(oyinchoqlar)}")
-print(oyinchoqlar)
+print(f"malumot turi -->{type(oyinchoqlar)}")
+print(oyinchoqlar) # bir nechta elementlarni bitta qilib chiqarib beradi
+
+#Amaliyot
+#1.
+lugat={
+       'for':"takrorlanish sikli",
+       'if':"shart operatori",
+       'int':'butun sonlar',
+       'float':"o'nlik sonlar",
+       'and':'mantiqiy va operatori',
+       'or':'mantiqiy yoki operatori' 
+       }
+for lugatlar in sorted(lugat):
+    print(f"{lugatlar}-{lugat[lugatlar]}")
+
+#2.
+davlatlar={
+    "O'zbekiston":'Toshkent',
+    'Qozogiston':'Astana',
+    'Turkmaniston':'Anqara',
+    'Tojikiston':'Dushanbe',
+    'Fransiya':'Parij',
+    'Italiya':'Rim',
+    'Ispaniya':'Madrid'
+    }
+print("Davlatlar ro'yxati:")
+for davlat in sorted(davlatlar.keys()):
+    print(davlat)
+print("Poytaxtlar ro'yxati:")
+for poytaxt in sorted(davlatlar.values()):
+    print(poytaxt)
+    
+#3.
+davlatlar={
+    "O'zbekiston":'Toshkent',
+    'Qozogiston':'Astana',
+    'Turkmaniston':'Anqara',
+    'Tojikiston':'Dushanbe',
+    'Fransiya':'Parij',
+    'Italiya':'Rim',
+    'Ispaniya':'Madrid'
+    }
+davlat=input("Qaysi davlatni poytaxtini bilishni xohlysiz:").title()
+poy=davlatlar.get(davlat)
+if poy==None:
+    print(f"kechirasiz {davlat} haqida malumot yoq")
+else:
+    print(f"{davlat}ni poytaxti {poy} shahri")
+        
