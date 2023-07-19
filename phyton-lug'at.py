@@ -218,3 +218,8 @@ telefonlar={
     }
 for telefon in set(telefonlar.values()):
     print(telefon)
+    
+# set aslida malumot turi unda takrorlangan elementlarni bitta qilib chiqarib beradi
+oyinchoqlar={'bear','ball','car','bear','lamp'}
+print(f"malumot turi {type(oyinchoqlar)}")
+print(oyinchoqlar)
