@@ -205,3 +205,16 @@ telefonlar={
     }
 for telefon in telefonlar.values():
     print(f"{telefon} ming")
+
+# set funksiyasi bir necha marotaba qatnashgan qiymatlarni bitta qilib ko'rsatadi
+telefonlar={
+    'Islom':"redmi note 8",
+    'Burjoq ':"Redmi 10",
+    'Mirzabek':"Redmi 10",
+    'Dilshod ':"Iphone 12",
+    'Quvonchbek':"Redmi 11",
+    'Shoxruzbek':"Iphone 7",
+    'Behruz':"Redmi 10"
+    }
+for telefon in set(telefonlar.values()):
+    print(telefon)
