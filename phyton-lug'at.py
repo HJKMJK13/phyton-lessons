@@ -183,3 +183,25 @@ mashinalar={
     }
 for mashina in sorted(mashinalar):
     print(mashina.title())
+
+#values metodi faqat qiymatlarni chiqarib beradi
+#1.
+mashinalar={
+    'malibu':20000,
+    'nexia 3':10000,
+    'gentra':15000,
+    'matiz':6000,
+    'lacetti':17000
+    }
+for mashina in mashinalar.values():
+    print(f"{mashina} $")
+#2.
+telefonlar={
+    'samsung A21s':1800000,
+    'redmi 10s':2800000,
+    'oppo':2500000,
+    'iphone 11':4600000,
+    'iphone 14':10000000
+    }
+for telefon in telefonlar.values():
+    print(f"{telefon} ming")
