@@ -290,5 +290,26 @@ for buyurtma in buyurtmalar:
     if buyurtma in menu:
         print(f"{buyurtma}ni narxi {menu[buyurtma]}so'm")
     else:
-        print(f"kechirasiz bu {buyurtma} yoq edi")
+        print(f"kechirasiz  {buyurtma} yoq edi")
+
+#qo'shimcha:
+yonalishlar={
+    'TM-2101':20,
+    'TM-2102':19,
+    'TM-2103':18,
+    'ATT':54,
+    'KIDT':46,
+    'AX':23
+    }
+print("3 ta yonalishni tanlang")
+talabalar=[]
+for n in range(3):
+    talabalar.append(input(f"{n+1}-yonalish:").upper())
+for talaba in talabalar:
+    if talaba in yonalishlar:
+        print(f"{talaba}da:{yonalishlar[talaba]} o'qiydi.")
+    else:
+        print("Bu yonalish haqida malumot berilmagan!")
+    
+    
 
