@@ -270,4 +270,25 @@ if poy==None:
     print(f"kechirasiz {davlat} haqida malumot yoq")
 else:
     print(f"{davlat}ni poytaxti {poy} shahri")
-        
+
+#4.
+menu={
+      'manti':12000,
+      'osh':18000,
+      'somsa':8000,
+      'shashlik':13000,
+      'norin':20000,
+      'shorva':10000,
+      'non':3000,
+      'choy':2000
+      }
+print("3 ta taom buyurtma bering:")
+buyurtmalar=[]
+for n in range(3):
+    buyurtmalar.append(input(f"{n+1}-taom:"))
+for buyurtma in buyurtmalar:
+    if buyurtma in menu:
+        print(f"{buyurtma}ni narxi {menu[buyurtma]}so'm")
+    else:
+        print(f"kechirasiz bu {buyurtma} yoq edi")
+
