@@ -307,7 +307,7 @@ for n in range(3):
     talabalar.append(input(f"{n+1}-yonalish:").upper())
 for talaba in talabalar:
     if talaba in yonalishlar:
-        print(f"{talaba}da:{yonalishlar[talaba]} o'qiydi.")
+        print(f"{talaba}da:{yonalishlar[talaba]}ta talaba o'qiydi.")
     else:
         print("Bu yonalish haqida malumot berilmagan!")
     
