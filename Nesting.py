@@ -91,3 +91,27 @@ shaxs_4={
 shaxslar=[shaxs_1,shaxs_2,shaxs_3,shaxs_4]
 for shaxs in shaxslar:
     print(f"{shaxs['ism']} {shaxs['t_yili']}-yilda {shaxs['t_joyi']}da tug'ilgan")
+
+#2.
+shaxs_1={
+    'ism':'ibn Ismoil',
+    'asarlari':['Al-jome as-sahih','Al-adab al-mufrad','At-tari al-kabir']
+    }
+shaxs_2={
+    'ism':'Abdulla Qodiriy',
+    'asarlari':['O\'tkan kunlar','Mehrobdan chayon','Obid ketmon']
+    }
+shaxs_3={
+    'ism':'Erkin Vohidov',
+    'asarlari':['Tong nafasi','Qoshiqlarim sizga','O\'zbegim']
+    }
+shaxs_4={
+    'ism':'Alisher Navoiy',
+    'asarlari':['Xamsa','Lison ut-Tayr','Mahbub ul-Qulub']
+    }
+shaxslar=[shaxs_1,shaxs_2,shaxs_3,shaxs_4]
+for shaxs in shaxslar:
+    asarlar=shaxs['asarlari']
+    print(f"{shaxs['ism']}ning mashxur asarlari:")
+    for asar in asarlar:
+        print(f"{asar}")
