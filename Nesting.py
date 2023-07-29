@@ -65,3 +65,29 @@ for ism,kasblar in kasblar.items():
     print(f"{ism} quyidagi dasturlash tillarni biladi:")
     for til in kasblar:
         print(f"{til}")
+
+#Amaliyot
+#1.
+shaxs_1={
+    'ism':'ibn Ismoil',
+    't_yili':810,
+    't_joyi':'Buxoro'
+    }
+shaxs_2={
+    'ism':'Abdulla Qodiriy',
+    't_yili':1894,
+    't_joyi':'Toshkent'
+    }
+shaxs_3={
+    'ism':'Erkin Vohidov',
+    't_yili':1936,
+    't_joyi':'Farg\'ona'
+    }
+shaxs_4={
+    'ism':'Alisher Navoiy',
+    't_yili':1441,
+    't_joyi':'Hirot'
+    }
+shaxslar=[shaxs_1,shaxs_2,shaxs_3,shaxs_4]
+for shaxs in shaxslar:
+    print(f"{shaxs['ism']} {shaxs['t_yili']}-yilda {shaxs['t_joyi']}da tug'ilgan")
