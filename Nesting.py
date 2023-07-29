@@ -46,8 +46,22 @@ for lacetti in lacettis[:3]:
 for lacetti in lacettis[3:5]:
     lacetti['rang']='kok'
 
-for lacetti in lacettis[:5]:
-    lacetti['Narx']=22000
+for lacetti in lacettis:
+    if lacetti['rang']=='qora':
+       lacetti['Narx']=22000
+    else:
+        lacetti['Narx']=22500
     
 for lacetti in lacettis:
     print(lacetti)
+    
+#Misol
+kasblar={
+    'Burjoq':['c#','phyton'],
+    'Alisher':['java','c#'],
+    'Islom':['html','css']
+    }
+for ism,kasblar in kasblar.items():
+    print(f"{ism} quyidagi dasturlash tillarni biladi:")
+    for til in kasblar:
+        print(f"{til}")
