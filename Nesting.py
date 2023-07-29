@@ -115,3 +115,29 @@ for shaxs in shaxslar:
     print(f"{shaxs['ism']}ning mashxur asarlari:")
     for asar in asarlar:
         print(f"{asar}")
+
+#3.
+
+shaxs_1={
+    'ism':'Islom',
+    'kinolar':['Terminator','Rembo','Titanic']
+    }
+shaxs_2={
+    'ism':'Burjoq',
+    'kinolar':['Tenet','Inception','Interstaller']
+    }
+shaxs_3={
+    'ism':'Mirzabek',
+    'kinolar':['Abdullajon','Bomba','Shaytanat']
+    }
+shaxs_4={
+    'ism':'Noilbek',
+    'kinolar':['Qasoskorlar','Forsaj','Tezlik zavqi']
+    }
+shaxslar=[shaxs_1,shaxs_2,shaxs_3,shaxs_4]
+for shaxs in shaxslar:
+    kino=shaxs['kinolar']
+    print(f"{shaxs['ism']}ning yoqtirgan  kinolari:")
+    for kinolari in kino:
+        print(f"{kinolari}")
+
