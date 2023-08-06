@@ -164,3 +164,29 @@ davlatlar=[davlat_1,davlat_2,davlat_3]
 for davlat in davlatlar:
     print(f"{davlat['d_nomi']} poytaxti:{davlat['poytaxti']} shaxri,\n Hududi:{davlat['hududi']} kv km,\n Aholisi:{davlat['aholisi']} mln")
 
+#5.
+davlat_1={
+    'd_nomi':'O\'zbekiston',
+    'poytaxti':'Toshkent',
+    'hududi':448900,
+    'aholisi':37.6
+    }
+davlat_2={
+    'd_nomi':'Rossia',
+   'poytaxti':'Moskva',
+   'hududi':17098246,
+   'aholisi':144
+    }
+davlat_3={
+    'd_nomi':'AQSH',
+   'poytaxti':'Vashington',
+   'hududi':9631418,
+   'aholisi':250
+    }
+davlatlar=[davlat_1,davlat_2,davlat_3]
+davlat=input("Davlat nomini kiriting:")
+if davlat in davlatlar:
+    info=davlatlar[davlat]
+    print(f"{davlat['d_nomi']} poytaxti:{davlat['poytaxti']} shaxri,\n Hududi:{davlat['hududi']} kv km,\n Aholisi:{davlat['aholisi']} mln")
+else:
+   print("Bu davlat haqida malumot berilmagan")
