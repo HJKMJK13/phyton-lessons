@@ -22,6 +22,7 @@
 #3.Ishora orqali siklni to'xtatish
 # =============================================================================
 # savol=input("Istalgan sonni kiriting(dasturni to\'xtatish un 'exit' deb yozing):")
+# savol=float(savol)
 # ishora=True
 # while ishora:
 #       qiymat=input(savol)
@@ -29,8 +30,8 @@
 #          ishora=False
 #       else:
 #          print(float(qiymat)**2)
+#       
 # =============================================================================
-      
 #4.break operatori
 # =============================================================================
 # savol=input("Istalgan sonni kiriting(dasturni to\'xtatish un 'exit' deb yozing):")
@@ -47,4 +48,11 @@ sonlar=list(range(1,11))
 for son in sonlar:
     if son==5:
         break
+    print(f"{son}ning kvadrati {son**2} ga teng")
+
+#6.continue
+sonlar=list(range(1,10))
+for son in sonlar:
+    if son==5:
+        continue
     print(f"{son} ning kvadrati {son**2} ga teng")
