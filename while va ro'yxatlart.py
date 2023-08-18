@@ -33,7 +33,7 @@ for mashina in mashinalar:
 dostlar={}
 ishora=True
 while ishora:
-    ism=input('Do\'stinghizni ismini kiriting:')
+    ism=input('Do\'stingizni ismini kiriting:')
     yosh=input(f"{ism}ni yoshini kiriting:")
     dostlar[ism]=int(yosh)
     takrorlash=input('Davom qildirasizmi:')
@@ -65,4 +65,20 @@ while True:
 print("Buyurtmalar ro'yxati:")
 for buyurtma in buyurtmalar:
     print(buyurtma.title())
+
+#2.Bozor uchun mahsulotlar va ularning narxini shakllantiruvchi dastur!
+bozor={}
+ishora=True
+n=1
+while ishora:
+    mahsulot=input(f"{n}-mahsulotni kiriting:")
+    narx=input(f"{mahsulot}nig narxini kiriting:")
+    bozor[mahsulot]=int(narx)
+    takrorlash=input('Davom qildirasizmi:')
+    n+=1
+    if takrorlash !='ha':
+        ishora=False
+print("Kiritildan mahsulotlar va ularni narxlari:")
+for buyurtma in bozor.items():
+    print(f"{mahsulot.title()}ni narxi {narx}")
   
