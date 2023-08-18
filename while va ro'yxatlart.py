@@ -49,4 +49,20 @@ car='matiz'
 while car in cars:
      cars.remove(car)
 print(cars)
+
+#Amaliyot
+#1.Foydalanuvchidan buyurtma qabul qiluvchi dastur!
+buyurtmalar=[]
+n=1
+while True:
+    savol=f"{n}-buyurtmani kiriting:"
+    zakaz=input(savol)
+    buyurtmalar.append(zakaz)
+    n+=1
+    takrorlash=input("Yana buyurtma berasizmi:")
+    if takrorlash !='ha':
+        break
+print("Buyurtmalar ro'yxati:")
+for buyurtma in buyurtmalar:
+    print(buyurtma.title())
   
