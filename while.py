@@ -48,4 +48,4 @@ for son in sonlar:
 sonlar=list(range(1,100))
 for son in sonlar:
     if son%2==0:
-       print(son)
+       print(son)    #--> juft sonlar chiqadi
