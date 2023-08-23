@@ -81,4 +81,19 @@ while ishora:
 print("Kiritildan mahsulotlar va ularni narxlari:")
 for buyurtma in bozor.items():
     print(f"{mahsulot.title()}ni narxi {narx}")
-  
+
+#3.Bozordagi mashinalar va ularni narxlari:
+bozor={}
+ishora=True
+n=1
+while ishora:
+    mashinalar=input(f"{n}-mashina nomini kiriting:")
+    narx=input(f"{mashinalar}ning narxini kiriting:")
+    bozor[mashinalar]=int(narx)
+    takrorlash=input('Davom qildiramizmi:')
+    n+=1
+    if takrorlash !='ha':
+        ishora=False
+print('Kiritilgan mashina va ularning narxi:')
+for mashina in bozor.items():
+    print(f"{mashinalar.title()}ning narxi {narx} $")
