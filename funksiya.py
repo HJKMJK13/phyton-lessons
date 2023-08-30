@@ -15,4 +15,44 @@ def salom_ber(ism):
     """Foydalanuvchining ismini qabul qilib unga salom beruvchi funksiya"""
     print(f"Assalomu aleykum hurmatli {ism.title()}")
 salom_ber('Karimjon')
-print(salom_ber.__doc__)
+print(salom_ber.__doc__) #--> docstringni konsolga chiqarish
+
+# 4.Funksiyaga bir nechta argument kiritishga doir misol:
+def salom_ber(ism,familya):
+    """Foydalanuvchining ism familyasini chiqaruvchi funksiya"""
+    print(f"Foydalanuvchining ismi:{ism.title()} \nFoydalanuvchining familyasi:{familya.title()}")
+salom_ber('Karimjon','Norboyev')
+
+#5. foydalanuchi va uning yoshini hisoblaydigan dastur:
+def foydalanuvchi(ism,tugilgan_yili):
+    """Foydalanuchi va uning yoshini hisoblaydigan dastur"""
+    print(f"Foydalanuvchining ismi:{ism.title()} \nFoydalanuvchining yoshi:{2023-tugilgan_yili}")
+foydalanuvchi('Karimjon', 2004)
+
+# AMALIYOT
+
+# =============================================================================
+# #1.
+# def foydalanuvchi(name,surname,yosh=20):
+#     """Foydalanuvchi ism,familyasini yoshini chiqaruvchi dastur"""
+# ism=input("Foydalanuvchi ismini kiriting:")
+# familya=input("Foydalanuvchi familyasini kiriting:")
+# print(f"Foydalanuvchining ismi:{ism.title()} \nFoydalanuvchining familyasi:{familya.title()} \nFoydalanuvchining yoshi:{yosh}")
+# foydalanuvchi(ism,familya)
+# 
+# =============================================================================
+#2.
+def kiritilgan_son(num):
+    
+    print(f"{num} ni kvadrati:{num**2} \n{num} kubi:{num**3}")
+kiritilgan_son(25)
+
+#3.
+def son_kirit(a):
+   
+    if a%2==0:
+        print(f"{a} soni juft")
+    else:
+        print(f"{a} soni toq")
+son_kirit(12)
+        
