@@ -71,6 +71,18 @@ sonlar(24, 34)
 
 #5.darajani hisoblash:
 def numbers(x,y):
-    print(f"{x} ning {y} darajasi {x**y} ga teng")
+    print(f"{x} ning {y}-darajasi {x**y} ga teng")
 numbers(4, 3)
+
+#6.Berilgan sonning qatiy darajasinin chiqaruvchi funksiya:
+def number(x,y=2):
+    print(f"{x} ning kvadrati {x**y} ga teng")
+number(24)
+#7.
+def num(x):
+    for n in range(2,11):
+        if x%n==0:
+            print(f"{x} {n} ga qoldiqsiz bolinadi")
+num(24)
+
     
