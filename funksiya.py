@@ -17,11 +17,14 @@ def salom_ber(ism):
 salom_ber('Karimjon')
 print(salom_ber.__doc__) #--> docstringni konsolga chiqarish
 
+
 # 4.Funksiyaga bir nechta argument kiritishga doir misol:
+
 def salom_ber(ism,familya):
     """Foydalanuvchining ism familyasini chiqaruvchi funksiya"""
     print(f"Foydalanuvchining ismi:{ism.title()} \nFoydalanuvchining familyasi:{familya.title()}")
 salom_ber('Karimjon','Norboyev')
+
 
 #5. foydalanuchi va uning yoshini hisoblaydigan dastur:
 def foydalanuvchi(ism,tugilgan_yili):
@@ -55,4 +58,14 @@ def son_kirit(a):
     else:
         print(f"{a} soni toq")
 son_kirit(12)
-        
+
+#4.2 tasondan kattasini chiqarish:
+def sonlar(son_1,son_2):
+    if son_1>son_2:
+        print(f"{son_1} katta {son_2}dan")
+    elif son_1==son_2:
+        print(f"{son_1} bn {son_2} teng")
+    else:
+        print(f"{son_2} katta {son_1}dan")
+sonlar(24, 34)
+    
