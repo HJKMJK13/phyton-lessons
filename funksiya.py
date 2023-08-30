@@ -68,4 +68,9 @@ def sonlar(son_1,son_2):
     else:
         print(f"{son_2} katta {son_1}dan")
 sonlar(24, 34)
+
+#5.darajani hisoblash:
+def numbers(x,y):
+    print(f"{x} ning {y} darajasi {x**y} ga teng")
+numbers(4, 3)
     
