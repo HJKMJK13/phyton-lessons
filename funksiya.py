@@ -85,11 +85,17 @@ def num(x):
             print(f"{x} {n} ga qoldiqsiz bolinadi")
 num(24)
 
-#
+# birdan yuzgacha bolgan sonlar orasida 3 ga bolinadigani
 def bolinish(x):
     for n in range(1,100):
         if n%x==0:
             print(f"{n}--> 3 ga bo'linadi")
 bolinish(3)
+
+#
+def text(x):
+    for n in range(1,100):
+        print(f"{n}.{x}")
+text("Man o'zimni yaxshi ko'raman  ❤️❤️")
 
     
