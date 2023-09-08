@@ -98,4 +98,29 @@ def text(x):
         print(f"{n}.{x}")
 text("Man o'zimni yaxshi ko'raman  ❤️❤️")
 
+#
+def fibonacci(n):
+    sonlar = []
+    for x in range(n):
+        if x == 0 or x == 1:
+            sonlar.append(1)
+        else:
+            sonlar.append(sonlar[x - 1] + sonlar[x - 2])
+    return sonlar
+
+
+print(fibonacci(10))
+#
+def fibonachi_2(n):
+    numbers=[]
+    for x in range(n):
+        if x==0 or x==1:
+            numbers.append(1)
+        else:
+            numbers.append(numbers[x-1]+numbers[x-2])
+        return numbers
+fibo=fibonachi_2(100)
+
+            
+
     
