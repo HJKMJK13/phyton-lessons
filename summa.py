@@ -35,12 +35,20 @@ def kopaytma(*numbers):
     return kopayt
 print(kopaytma(1,2,3,4))
 
-#6.
+#6.Berilgan sondan berilgan songacha bolgan sonlar yigindisi aytaylik(1 dan 100 gacha) -->
 def son(n):
     number=0
     for numbers in range(1,n):
         number += numbers
     return number
 print(son(100))
+
+#7. berilgan sondan berilgan songacha bolgan sonlar kopaytmasini chiqaruvchi dastur(aytaylik 1 dan 100 gacha)-->
+def kopaytma(n):
+    kopay=1
+    for num in range(1,n):
+        kopay *=num
+    return kopay
+print(kopaytma(100))
 
 
