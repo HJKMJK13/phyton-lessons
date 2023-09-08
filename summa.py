@@ -51,4 +51,12 @@ def kopaytma(n):
     return kopay
 print(kopaytma(100))
 
+#8. kwargs yordamida talaba haqida malumot kiritamiz
+def talaba_m(ism,familya,**news):
+    news['Ism']=ism
+    news['Familya']=familya
+    return news
+new_1=talaba_m('Karimjon', 'Norboyev', yoshi=20,tugilgan_joyi='Buxoro')
+print(new_1)
+
 
