@@ -59,4 +59,14 @@ def talaba_m(ism,familya,**news):
 new_1=talaba_m('Karimjon', 'Norboyev', yoshi=20,tugilgan_joyi='Buxoro')
 print(new_1)
 
+#9.Davlatlar haqida malumot
+def country(nom,poytaxt,**new):
+    new['Nomi']=nom
+    new['Poytaxti']=poytaxt
+    return new
+country_1=country("O'zbekiston", 'Toshkent', aholi=38000000,maydoni=448900,viloyati=13)
+country_2=country('Qozogiston', 'Astana', aholi=20000000,maydoni=2800000,viloyat=17)
+print(country_1)
+print(country_2)
+
 
