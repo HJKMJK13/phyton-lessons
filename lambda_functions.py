@@ -31,11 +31,18 @@ sonlar=list(range(101))
 kvadrat=list(map(lambda x:x*x,sonlar))
 print(kvadrat)
 
-#7. filter yordamida  sonlar ichidan tasodifiy n tasini chiqaruvchi dastur
+#7. filter yordamida  sonlar ichidan tasodifiy n ta juft sonni  chiqaruvchi dastur
 import random as r
 sonlar=r.sample(range(100),10)
 def juft_s(x):
     return x%2==0
-juft=list(filter(juft_s,sonlar))
-print(juft)
+juft_sonlar=list(filter(juft_s,sonlar))
+print(juft_sonlar)
 
+#8.filter yordamida  sonlar ichidan tasodifiy n ta toq sonni  chiqaruvchi dastur
+import random as r
+numbers=r.sample(range(200),50)
+def toq_s(x):
+    return x%2==1
+toq_sonlar=list(filter(toq_s,numbers))
+print(toq_sonlar)
