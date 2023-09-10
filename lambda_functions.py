@@ -12,3 +12,9 @@ from math import exp
 sonlar=list(range(26))
 ildizlar=list(map(exp, sonlar))
 print(ildizlar)
+
+#4.
+from math import exp
+numbers=list(range(101))
+daraja=list(map(exp,numbers))
+print(daraja)
