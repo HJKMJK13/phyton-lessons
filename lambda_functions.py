@@ -30,3 +30,12 @@ print(natija)
 sonlar=list(range(101))
 kvadrat=list(map(lambda x:x*x,sonlar))
 print(kvadrat)
+
+#7. filter yordamida  sonlar ichidan tasodifiy n tasini chiqaruvchi dastur
+import random as r
+sonlar=r.sample(range(100),10)
+def juft_s(x):
+    return x%2==0
+juft=list(filter(juft_s,sonlar))
+print(juft)
+
