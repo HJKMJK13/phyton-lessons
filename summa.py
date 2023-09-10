@@ -69,4 +69,10 @@ country_2=country('Qozogiston', 'Astana', aholi=20000000,maydoni=2800000,viloyat
 print(country_1)
 print(country_2)
 
+#labda ifodalar
+import math 
+uzunlik=lambda pi,r:2*pi*r
+print(uzunlik(math.pi,10))
+
+
 
