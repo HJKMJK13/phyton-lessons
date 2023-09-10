@@ -25,3 +25,8 @@ def daraja2(x):
     return x*x
 natija=list(map(daraja2,sonlar))
 print(natija)
+
+#6. berilgan sonlar kvadratini lambda funksiyasi orqali chiqarish
+sonlar=list(range(101))
+kvadrat=list(map(lambda x:x*x,sonlar))
+print(kvadrat)
