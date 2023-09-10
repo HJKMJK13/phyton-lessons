@@ -18,3 +18,10 @@ from math import exp
 numbers=list(range(101))
 daraja=list(map(exp,numbers))
 print(daraja)
+
+#5.
+sonlar=list(range(101))
+def daraja2(x):
+    return x*x
+natija=list(map(daraja2,sonlar))
+print(natija)
