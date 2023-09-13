@@ -46,3 +46,9 @@ def toq_s(x):
     return x%2==1
 toq_sonlar=list(filter(toq_s,numbers))
 print(toq_sonlar)
+
+#9.
+ismlar=['Karimjon','Mirzabek','Burjoq','Islom','Noilbek','Behruz','Quvonchbek']
+harf='B'
+names=list(filter(lambda ism:ism.startswith(harf), ismlar))
+print(names)
