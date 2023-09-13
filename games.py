@@ -12,8 +12,8 @@ def sontop(x=10):
             print("Xato.Men o'ylagan son kiritgan soninggizdan kichikroq")
         else:
             break
+    print(f"Tabriklayman.{taxminlar} ta taxmin bilan topdingiz")
     return taxminlar
-    print(f"Tabriklaymiz.{taxminlar} ta taxmin bilan topdingiz")
 def bizni_son(x=10):
     input(f"1 dan {x} gacha biror son o'ylang va biror tugmani bosing.Men topaman")
     quyi=1
@@ -35,5 +35,17 @@ def bizni_son(x=10):
             break
     print(f"Men {taxminlar} ta taxmin bilan topdim")
     return taxminlar
-
+def play(x=10):
+    yana=True
+    while yana:
+        taxminlar_user=sontop(x)
+        taxminlar_pc=bizni_son(x)
+        if taxminlar_user>taxminlar_pc:
+            print("Men yuttim")
+        elif taxminlar_pc>taxminlar_user:
+            print("Siz yutdingiz.Tabrikliman")
+        else:
+            print("Durrang!")
+        yana=int(input("Yana o'ynaysizmi?Ha(1)/Yoq(0):"))
+        
             
